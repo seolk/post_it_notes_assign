@@ -1,0 +1,6 @@
+<h1>Post It Notes</h1>
+<%= link_to "Create New Post It Note", notes_new_path %>
+
+<% @notes.each do |note| %>
+  <%= link_to note.name, note %>
+<% end %>
